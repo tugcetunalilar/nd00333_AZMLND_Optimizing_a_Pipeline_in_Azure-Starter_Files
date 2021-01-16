@@ -16,7 +16,7 @@ I used two ML pipelines, defining the primary metric as "Accuracy". They are:
 
 The selected best models were:
 
-i) Scikit-learn: Logistic Regression model with 90.89% Accuracy and with parameter values: C1: 1,max_iter: 100.
+i) Scikit-learn: Logistic Regression model with 91.43% Accuracy and with parameter values: C1: 1,max_iter: 100.
 
 ii) Azure AutoML: VotingEnsemble classifier with 91.639 % Accuracy. Therefore, best pipeline was Azure AutoML and best model was VotingEnsemble classifier with 91.639 % Accuracy.
 
