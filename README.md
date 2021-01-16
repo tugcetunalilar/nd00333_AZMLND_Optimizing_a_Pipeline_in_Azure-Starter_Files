@@ -6,10 +6,19 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+The dataset is on the direct marketing campaign of bank. Each record represents a potential target customer for deposit placement with the bank and its result as to whether effort led to placement of deposit. What we tried to do with the ML model was to train a binary classification model to predict whether a potential target of marketing campaign would lead to a deposit placement. 
 
-**In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+I used two ML pipelines, defining the primary metric as "Accuracy". They are:
 
+1) Scikit-learn pipeline with Logistic Regression Classifier and hyperdrive for hyperparameter tuning.
+
+2) Microsoft Azure proprietary AutoML pipeline for automated machine learning including selection of classifiers and their hyper parameters.
+
+The selected best models were:
+
+i) Scikit-learn: Logistic Regression model with 91.138% Accuracy and with parameter values: C1: 0.48392209, max_iter: 200.
+
+ii) Azure AutoML: VotingEnsemble classifier with 91.639 % Accuracy. Therefore, best pipeline was Azure AutoML and best model was VotingEnsemble classifier with 91.639 % Accuracy.
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 
